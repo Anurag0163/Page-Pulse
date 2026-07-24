@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Pulse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            <i class="fa-solid fa-globe"></i>
+            Page Pulse
+        </h1>
+
+        <p class="subtitle">
+            Website SEO & Performance Analyzer
+        </p>
+
+        <input
+    type="text"
+    id="urlInput"
+    placeholder="https://example.com"
+    onkeypress="handleEnter(event)">
+
+        <button onclick="analyzeWebsite()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Analyze Website
+        </button>
+
+        <div id="result"></div>
+
+        <footer>
+    <p>
+        Built for
+        <a href="https://digitalheroesco.com" target="_blank">
+            Digital Heroes Training Task
+        </a>
+    </p>
+</footer>>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

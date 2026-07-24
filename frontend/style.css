@@ -1,0 +1,967 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top left,#3b82f6 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 35%),
+    linear-gradient(135deg,#0f172a,#1e293b,#111827);
+
+    color:#fff;
+
+    padding:40px;
+
+}
+
+
+/* ===========================
+        CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+    max-width:1300px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+}
+
+
+/* ===========================
+        HEADER
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#d1d5db;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+
+/* ===========================
+       SEARCH BAR
+=========================== */
+
+input{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:0 20px;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.35s;
+
+    margin-bottom:18px;
+
+}
+
+input:focus{
+
+    transform:scale(1.01);
+
+    box-shadow:
+
+    0 0 25px rgba(59,130,246,.45);
+
+}
+
+
+/* ===========================
+         BUTTON
+=========================== */
+
+button{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 30px rgba(59,130,246,.45);
+
+}
+
+
+/* ===========================
+        RESULT
+=========================== */
+
+#result{
+
+    margin-top:35px;
+
+}
+
+
+/* ===========================
+      DASHBOARD TOP
+=========================== */
+
+.dashboard-top{
+
+    display:grid;
+
+    grid-template-columns:
+    320px
+    1fr;
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===========================
+      SCORE CARD
+=========================== */
+
+.score-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+#seoChart{
+
+    width:190px!important;
+
+    height:190px!important;
+
+    margin:auto;
+
+}
+
+#seoScoreText{
+
+    margin-top:-122px;
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.score-card p{
+
+    margin-top:80px;
+
+    font-size:18px;
+
+    color:#d1d5db;
+
+}
+
+
+/* ===========================
+      SUMMARY CARD
+=========================== */
+
+.summary-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.summary-card h2{
+
+    color:#60a5fa;
+
+    margin-bottom:20px;
+
+}
+
+.summary-card p{
+
+    margin:14px 0;
+
+    font-size:17px;
+
+    color:#e5e7eb;
+
+}
+
+/* ==========================================
+            REPORT TITLE
+========================================== */
+
+.report-title{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+              GRID
+========================================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.wide{
+
+    grid-column:1/3;
+
+}
+
+/* ==========================================
+            PREMIUM CARD
+========================================== */
+
+.card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    top:-60px;
+
+    right:-60px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.35);
+
+}
+
+.card h3{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#60a5fa;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+}
+
+.card h3 i{
+
+    font-size:22px;
+
+}
+
+.card p{
+
+    font-size:17px;
+
+    color:#f3f4f6;
+
+    line-height:1.7;
+
+    word-break:break-word;
+
+}
+
+/* ==========================================
+            STATUS COLORS
+========================================== */
+
+.status-success{
+
+    color:#22c55e;
+
+    font-weight:700;
+
+}
+
+.status-warning{
+
+    color:#f59e0b;
+
+    font-weight:700;
+
+}
+
+.status-danger{
+
+    color:#ef4444;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+            PERFORMANCE BAR
+========================================== */
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#1f2937;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-top:15px;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    width:80%;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+}
+
+/* ==========================================
+            SUGGESTION BOX
+========================================== */
+
+.suggestion-box{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    padding:30px;
+
+}
+
+.suggestion-box h2{
+
+    color:#60a5fa;
+
+    margin-bottom:18px;
+
+}
+
+.suggestion{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:15px 0;
+
+    font-size:16px;
+
+}
+
+.good{
+
+    color:#22c55e;
+
+}
+
+.bad{
+
+    color:#ef4444;
+
+}
+
+.warning{
+
+    color:#f59e0b;
+
+}
+
+/* ==========================================
+            LOADING
+========================================== */
+
+.spinner{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    border:6px solid rgba(255,255,255,.15);
+
+    border-top:6px solid #3b82f6;
+
+    margin:auto;
+
+    animation:spin .9s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+                ERROR
+========================================== */
+
+.error{
+
+    background:#dc2626;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:white;
+
+    margin-top:20px;
+
+}
+
+/* ==========================================
+            GRAPH SECTION
+========================================== */
+
+.chart-container{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.chart-container h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#60a5fa;
+
+}
+
+.chart-container canvas{
+
+    width:100%!important;
+
+    max-height:320px;
+
+}
+
+/* ==========================================
+            FOOTER
+========================================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    color:#d1d5db;
+
+}
+
+footer strong{
+
+    color:white;
+
+}
+
+footer a{
+
+    color:#60a5fa;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+footer a:hover{
+
+    color:#93c5fd;
+
+}
+
+/* ==========================================
+            CUSTOM SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* ==========================================
+            ANIMATION
+========================================== */
+
+.container{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.card{
+
+    animation:slideUp .7s ease;
+
+}
+
+.score-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+.summary-card{
+
+    animation:slideLeft .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:1000px){
+
+.dashboard-top{
+
+grid-template-columns:1fr;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.wide{
+
+grid-column:auto;
+
+}
+
+}
+
+@media(max-width:700px){
+
+body{
+
+padding:20px;
+
+}
+
+.container{
+
+padding:22px;
+
+}
+
+h1{
+
+font-size:32px;
+
+}
+
+.subtitle{
+
+font-size:15px;
+
+}
+
+button{
+
+font-size:16px;
+
+}
+
+.card{
+
+padding:18px;
+
+}
+
+.summary-card{
+
+padding:22px;
+
+}
+
+.score-card{
+
+padding:22px;
+
+}
+
+#seoChart{
+
+width:160px!important;
+
+height:160px!important;
+
+}
+
+#seoScoreText{
+
+font-size:28px;
+
+margin-top:-105px;
+
+}
+
+}
+
+/* ==========================================
+            FLOATING GLOW
+========================================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:350px;
+
+height:350px;
+
+background:#2563eb55;
+
+filter:blur(120px);
+
+top:-100px;
+
+left:-100px;
+
+z-index:-1;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:350px;
+
+height:350px;
+
+background:#7c3aed55;
+
+filter:blur(120px);
+
+bottom:-100px;
+
+right:-100px;
+
+z-index:-1;
+
+}
+
+.download-btn{
+
+margin-top:25px;
+
+background:linear-gradient(90deg,#16a34a,#22c55e);
+
+}
+
+.download-btn:hover{
+
+background:linear-gradient(90deg,#15803d,#16a34a);
+
+}
