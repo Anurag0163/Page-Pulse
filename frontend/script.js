@@ -20,7 +20,7 @@ async function analyzeWebsite() {
         `;
 
         const response = await fetch(
-            `http://127.0.0.1:8000/analyze?url=${encodeURIComponent(url)}`
+            `https://page-pulse-api-qckx.onrender.com/analyze?url=${encodeURIComponent(url)}`
         );
 
         if (!response.ok) {
