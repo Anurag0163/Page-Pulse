@@ -23,6 +23,12 @@ def home():
 
 @app.get("/analyze")
 def analyze(url: str):
+    if not url.strip():
+        raise HTTPException(
+            status_code=400,
+            detail="URL cannot be empty"
+        )
+
 
     try:
         # Start Time
@@ -30,6 +36,15 @@ def analyze(url: str):
 
         # Website Request
         response = requests.get(url, timeout=10)
+
+        content_type = response.headers.get("Content-Type", "")
+
+        if "text/html" not in content_type:
+            raise HTTPException(
+                status_code=400,
+                detail="URL does not point to an HTML page"
+            )
+        
 
         # End Time
         end_time = time.time()
