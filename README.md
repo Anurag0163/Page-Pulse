@@ -160,9 +160,17 @@ Backend
 
 ---
 
+
 # 📷 Screenshots
 
-Add screenshots of your homepage and analysis result here.
+## Home Page
+
+![Home Page](screenshots/homepage.png)
+
+## Analysis Result
+
+![Analysis Result](screenshots/result.png)
+
 
 ---
 
